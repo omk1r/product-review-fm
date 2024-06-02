@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container {
+  max-width: 40rem;
+  margin: 1.5rem 1rem 1.5rem 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+.content {
+  padding: 1.5em;
+}
+
+.img-footer {
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+.header {
+  font-family: Fraunces;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  line-height: 2em;
+  font-size: 1rem;
+}
+.description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+#dis-price {
+  font-family: Fraunces;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: xx-large;
+}
+#cut-price {
+  margin-left: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+button {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  height: 3rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+}
+button img {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    font-size: 16px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-evenly;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .img-container img {
+    content: url("/images/image-product-desktop.jpg");
+  }
+}
